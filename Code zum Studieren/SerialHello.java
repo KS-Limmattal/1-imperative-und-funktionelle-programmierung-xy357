@@ -12,7 +12,7 @@ public class SerialHello {
     }
 
     public static void main(String[] args) {
-        String[] studentNames = { "Andreas", "Ania", "Janna", "Marius", "Mateo", "Kai" };
+        String[] studentNames = { "Benjamin", "Laurin", "Philip", "Samarth", "Yuanheng" };
         serialHello1(studentNames);
     }
 }

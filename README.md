@@ -1,4 +1,4 @@
-# Aufgabe B1
+# Aufgabe 1
 
 ## Grundsätzliches
 - In dieser Aufgabe übst du den Umgang mit Methoden, Variablen, Operationen, Schleifen und Arrays.
