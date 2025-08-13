@@ -1,4 +1,4 @@
-# Aufgabe 1
+# Programmieraufgabe 1
 
 ## Grundsätzliches
 - In dieser Aufgabe übst du den Umgang mit Methoden, Variablen, Operationen, Schleifen und Arrays.
@@ -64,7 +64,7 @@ f) Ein magisches Quadrat ist ein Zahlenquadrat, in dem die Summe jeder Zeile, je
     { 7, 9, 4, 14 }
 }
 ```
-        
+
 ist ein magisches Quadrat
 
 *g) [Conways Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life): Das Spiel basiert auf der folgenden Idee: Die Spielwelt besteht aus einer Matrix von Zellen, die entweder leben oder tot sind. Jede Zelle hat 8 Nachbarn, Randzellen haben die Zellen des gegenüberliegenden Randes als Nachbarn. Aus der momentanen Zellenpopulation kann man die Population in der nächsten Generation durch folgende Regeln berechnen:
@@ -89,7 +89,7 @@ Aufgabe:
 ### Aufgabenstellungen
 Für die folgenden Probleme gäbe es grundsätzlich auch iterative (d.h. schleifenbasierte) Lösungen. Sie sollen aber allesamt mit Rekursion gelöst werden - wenn möglich ohne Hilfsmethoden. 
 Falls nichts Anderes erwähnt, soll das Resultat zurückgegeben werden.
- 
+
 h) Euklidischer Algorithmus: Damit kann von zwei natürlichen Zahlen x und y der ggT berechnet werden:
    ggT(24, 81):
    81 / 24 -> Rest 9
@@ -99,15 +99,15 @@ h) Euklidischer Algorithmus: Damit kann von zwei natürlichen Zahlen x und y der
    => der letzte Rest ungleich 0 ist der ggT
    Programmiere eine rekursive Methode `gcd()` (greatest common divisor), die diesem Algorithmus folgt.
    Achtung: Wie viel Code brauchst du wirklich für die Fallunterscheidung, welches das grössere Argument ist?
- 
+
 i) Spiegeln einer Zeichenfolge: Schreibe ein Programm `verlan()`, das eine Zeichenfolge invertiert.
    Tipps: 
    - Für einen String `s` kann mit `char c = s.charAt(n)` das Zeichen an der `n`-ten Stelle ausgelesen werden. Zeichen vom Typ `char` können danach ganz normal mit Hilfe von `+` mit `Strings` verbunden werden.
    - Benutze `.substring()`
    - Es soll kein Array gebraucht werden.
- 
+
 j) Türme von Hanoi: Mache dich mit dem Problem vertraut und entwickle eine Methode `move(height, fromPeg, toPeg, otherPeg)`, die Schritt für Schritt ausgibt, welche Scheibe von welchem Stab auf welchen verschoben wird.
- 
+
    Zusatzaufgabe: Stelle jeden Schritt graphisch auf der Konsole dar.
- 
+
 *k) Implementiere ein Sortierverfahren deiner Wahl rekursiv. Für welche Verfahren ist das überhaupt sinnvoll möglich?
