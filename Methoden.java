@@ -14,11 +14,17 @@ public class Methoden {
     
         //System.out.println("h: " + h);
         //System.out.print("h:min:sec - ");
-        System.out.println(h + ":" + min + ":" + sec);
 
-
+        System.out.println(h + ":" + ((min < 9) ? "0" + min : min) + ":" + ((sec < 9) ? "0"+ sec :  sec));
+        //System.out.println(h + ":" + min + ":" + sec);
     }
-
+    static double distance(int x, int y){
+        int c;
+        c=x*x+y*y;
+        int d;
+        d=(int) Math.sqrt(c);
+        return d;
+    }
 
     // TODO: Schreibe hier die Methoden für die Teilaufgaben.
     
@@ -36,6 +42,9 @@ public class Methoden {
 
         // Test-Code für Teilaufgabe b)
         System.out.println("Aufgabe b)");
+        System.out.println(distance(4,3));
+        System.out.println(distance(1,1));
+        System.out.println(distance(2,2));
         // TODO: Schreibe Testcode für die Aufgabe
         System.out.println();
     }
