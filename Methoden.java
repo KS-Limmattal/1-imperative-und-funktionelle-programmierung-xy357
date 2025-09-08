@@ -1,19 +1,19 @@
 public class Methoden {
     static void hours(int s){
-        System.out.println(s);
+        //System.out.println(s);
         int sec;
         sec = s % 60;
-        System.out.println("sec: " + sec);
+        //System.out.println("sec: " + sec);
         int min;
         int m;
         m = s / 60;
         min = m % 60;
-        System.out.println("min: " + min);
+        //System.out.println("min: " + min);
         int h;
         h = m / 60;
     
-        System.out.println("h: " + h);
-        System.out.print("h:min:sec - ");
+        //System.out.println("h: " + h);
+        //System.out.print("h:min:sec - ");
         System.out.println(h + ":" + min + ":" + sec);
 
 
