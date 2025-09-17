@@ -1,11 +1,14 @@
 public class Loops {
     static void primeFactorisation(int n){
+        System.out.println(" ");
         int i=2;
-        if (n%i==0){
-            n=n/i;
-            System.out.println(n);
-        } else {
-            System.out.println(i);
+        while (n>=1) {
+            if (n%i==0){
+                n=n/i;
+                System.out.print(i+"*");
+            } else {
+                i=i+1;
+            }
         }
     }
 
@@ -29,6 +32,8 @@ public class Loops {
         // Test-Code für Teilaufgabe c)
         System.out.println("Aufgabe c)");
         primeFactorisation(6);
+        primeFactorisation(1);
+        primeFactorisation(4);
         // TODO: Schreibe mehr Testcode
         System.out.println();
         
