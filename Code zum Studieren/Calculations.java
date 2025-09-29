@@ -22,6 +22,7 @@ public class Calculations {
         // Rechnungen mit Ganzzahlen
         int a = -11;
         int b = 3;
+        double d=-1882;
         System.out.println("Rechnung: " + a + b); // Wie kann ich hier das Resultat anzeigen lassen?
 
         System.out.println(123456 / 10);
@@ -40,7 +41,7 @@ public class Calculations {
         //System.out.println(square(2.5)); // Scheitert wegen falschem Argumenttyp!
         System.out.println(betrag(3.1));
         System.out.println(betrag(-1.1));
-        System.out.println(betrag(a)); // Funktioniert trotz falschem Argumenttyp wegen automatischem Type Casting (=Typkonversion)
+        System.out.println(betrag(d)); // Funktioniert trotz falschem Argumenttyp wegen automatischem Type Casting (=Typkonversion)
         double c = betrag(square(-20));
         System.out.println(c);
     }
