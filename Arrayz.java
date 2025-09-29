@@ -17,8 +17,10 @@ public class Arrayz {
             }
             }
         }
-        return b;
-        
+        return b; 
+    }
+    static int[][] isMagicSquare(int[][] a) {
+
     }
     // TODO: Schreibe hier die Methoden für die Teilaufgaben.
     
