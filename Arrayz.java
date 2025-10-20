@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class Arrayz {
     static double[] sort(double[] b) {
         int i= b.length;
-        //double[] b;
-        //b = new double [i];
+        // double[] b;
+        // b = new double [i];
         for (int z=0; z<=i-1; z++) {
             for (int n=1; n<i; n++) {
             //b [n]=a [n];
@@ -19,8 +19,25 @@ public class Arrayz {
         }
         return b; 
     }
-    static int[][] isMagicSquare(int[][] a) {
-
+    static boolean isMagicSquare(int[][] a) {
+        boolean h=true;
+        int i = a.length;
+        boolean w=true;
+        int c= 0;
+        for (int l=0; l<=0; l++ ){
+            if (w==true){
+                if (i==a[c].length){
+                    w=true;
+                } else {
+                    w=false;
+                }
+            } else {
+                h=false;
+                break;
+            }
+        h=true;
+        }
+        return h;
     }
     // TODO: Schreibe hier die Methoden für die Teilaufgaben.
     
