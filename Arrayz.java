@@ -35,6 +35,16 @@ public class Arrayz {
                 h=false;
                 break;
             }
+        int zei;
+        int spa;
+        int dia;
+        double azei=0;
+        for (int eintzei=0; eintzei<=i; eintzei++) {
+            azei= azei + a[eintzei][0]
+        }
+        for (zei=0; zei<= i; zei++){
+            if ( )
+        }
         h=true;
         }
         return h;
@@ -54,11 +64,11 @@ public class Arrayz {
 
         // Test-Code für Teilaufgabe f)
         System.out.println("Aufgabe f)");
-        int[][] magicSquare = new int[][] { { 12, 6, 15, 1 },
-                { 13, 3, 10, 8 },
-                { 2, 16, 5, 11 },
-                { 7, 9, 4, 14 }
-        };
+        // System.out.println(int[][] magicSquare = new int[][] { { 12, 6, 15, 1 },
+        //         { 13, 3, 10, 8 },
+        //         { 2, 16, 5, 11 },
+        //         { 7, 9, 4, 14 }
+        // });
         //System.out.println(isMagicSquare(magicSquare));
         int[][] nonMagicSquare = new int[][] { { 1, 6, 15, 1 },
                 { 13, 3, 10, 8 },
