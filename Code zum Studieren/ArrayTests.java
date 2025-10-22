@@ -44,8 +44,8 @@ public class ArrayTests {
     }
 
     public static void main(String[] args) {
-        // syntax();
-        // memory();
+        syntax();
+        memory();
         double[] a = { 0.5, 2.71828, 1/10, 2.75};
         double[] b = { 0.5, 2.71828, 1/10, 2.75};
         double[][] c = {a, b};
