@@ -19,14 +19,14 @@ public class Arrayz {
         }
         return b; 
     }
+    
     static boolean isMagicSquare(int[][] a) {
         boolean h=true;
         int i = a.length;
         boolean w=true;
-        int c= 0;
-        for (int l=0; l<=0; l++ ){
+        for (int l=0; l<i; l++ ){
             if (w==true){
-                if (i==a[c].length){
+                if (i==a[l].length){
                     w=true;
                 } else {
                     w=false;
@@ -35,18 +35,53 @@ public class Arrayz {
                 h=false;
                 break;
             }
-        int zei;
-        int spa;
-        int dia;
-        double azei=0;
-        for (int eintzei=0; eintzei<=i; eintzei++) {
-            azei= azei + a[eintzei][0]
         }
-        for (zei=0; zei<= i; zei++){
-            if ( )
+        if (w==true) {
+        int Summe=0;
+        for (int eintzei=0; eintzei<i; eintzei++) {        //Anzahl Zeilen und Spalten
+            Summe = Summe + a[eintzei][0];
         }
-        h=true;
+        for (int q=0; q<i; q++){
+            int Summe2=0;
+            for (int eintzei=0; eintzei<i; eintzei++) {
+                Summe2 = Summe2 + a[eintzei][q];
+            }
+            if (Summe != Summe2) {
+                h=false;
+            }
+            if (h==false){
+                break;
+            }
         }
+        for (int q=0; q<i; q++){
+            int Summe2=0;
+            for (int eintzei=0; eintzei<i; eintzei++) {
+                Summe2 = Summe2 + a[q][eintzei];
+            }
+            if (Summe != Summe2) {
+                h=false;
+            }
+            if (h==false){
+                break;
+            }
+        }
+        int Summe2=0;
+        for (int eintzei=0; eintzei<i; eintzei++) {
+            Summe2 = Summe2 + a[eintzei][eintzei];
+        }
+        if (Summe != Summe2) {
+            h=false;
+        }
+        Summe2=0;
+        for (int eintzei=0; eintzei<i; eintzei++) {
+            Summe2 = Summe2 + a[eintzei][i-1-eintzei];
+        }
+        if (Summe != Summe2) {
+            h=false;
+        }
+    }else{
+        h=false;
+    }
         return h;
     }
     // TODO: Schreibe hier die Methoden für die Teilaufgaben.
@@ -64,18 +99,22 @@ public class Arrayz {
 
         // Test-Code für Teilaufgabe f)
         System.out.println("Aufgabe f)");
-        // System.out.println(int[][] magicSquare = new int[][] { { 12, 6, 15, 1 },
-        //         { 13, 3, 10, 8 },
-        //         { 2, 16, 5, 11 },
-        //         { 7, 9, 4, 14 }
-        // });
-        //System.out.println(isMagicSquare(magicSquare));
+        int[][] magicSquare = new int[][] { { 12, 6, 15, 1 },
+                { 13, 3, 10, 8 },
+                { 2, 16, 5, 11 },
+                { 7, 9, 4, 14 }
+        };
+        System.out.println(isMagicSquare(magicSquare));
         int[][] nonMagicSquare = new int[][] { { 1, 6, 15, 1 },
                 { 13, 3, 10, 8 },
                 { 2, 16, 5, 11 },
                 { 7, 9, 4, 14 }
         };
-        //System.out.println(isMagicSquare(nonMagicSquare));
+        System.out.println(isMagicSquare(nonMagicSquare));
+        int [][] mS2= new int [][] {{1}};
+        System.out.println(isMagicSquare(mS2));
+        int [][] nmS2 = new int [][] {{1,1}, {2}};
+        System.out.println(isMagicSquare(nmS2));
         System.out.println();
     }
 }
